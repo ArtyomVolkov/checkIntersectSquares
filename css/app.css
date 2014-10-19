@@ -1,0 +1,84 @@
+button {
+	min-width: 100px;
+}
+p , h4 {
+	margin: 1px;
+}
+#container {
+	margin: 10% auto;
+	border: 1px solid rgb(30, 125, 205);
+	box-shadow: 4px 5px 15px rgb(30, 125, 205);
+	width: 400px;
+	border-radius: 10px;
+}
+#toolPanel {
+	height: 40px;
+	padding: 5px;
+}
+#toolPanel input {
+	height: 25px;
+	width: 50px;
+	margin-bottom: 0;
+}
+#toolPanel table td {
+	padding: 5px;
+}
+#log_panel {
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	margin: 5px;
+}
+#resultPanel {
+	padding: 10px 5px; 
+	height: auto;
+	border-top: 1px solid #dcdcdc;
+}
+#paintPlace {
+	border: 1px dashed black;
+	background-color: rgb(247, 247, 247);
+	margin: 10px;
+	height: 340px;
+	cursor: crosshair;
+}
+.panel_title > label {
+	padding: 5px 15px;
+	margin: 0;
+	z-index: 20;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	position: relative;
+}
+.down_icon .panel_title > label:after {
+	content: '';
+	background: transparent url("../img/arrow_down.png") no-repeat center center;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 13px;
+	top: 5px;
+}
+.up_icon .panel_title > label:after {
+	content: '';
+	background: transparent url("../img/arrow_up.png") no-repeat center center;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 13px;
+	top: 5px;
+}
+.error {
+	background-color: red;
+}
+.success{
+	color: white;
+}
+.hidden {
+	display: none;
+}
+.show {
+	display: block;
+}
+.show p:first-child {
+	color: white;
+}
