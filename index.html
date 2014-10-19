@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Square</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+	<div id="container">
+		<div id="toolPanel">
+			<table>
+				<colgroup>
+					<col style="width: 20px;"></col>
+					<col style="width: auto;"></col>
+					<col style="width: 20px;"></col>
+					<col style="width: auto;"></col>
+					<col style="width: auto;"></col>
+					<col style="width: auto;"></col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>X:</td>
+						<td><input name="posX" type="text" size="5"></td>
+						<td>Y:</td>
+						<td><input name="posY" type="text" size="5"></td>
+						<td>
+							<button id="btnCheck" class="btn btn-primary">Check</button>
+						</td>
+						<td>
+							<button id="btnClear" class="btn btn-danger">Clear</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="paintPlace">
+			<canvas width="375px" height="340px" id="holst"></canvas>
+		</div>
+		<div id="log_panel" class="down_icon">
+			<div class="panel_title">
+				<label>LOG</label>
+			</div>
+			<div id="resultPanel" class="hidden"></div>
+		</div>
+	</div>
+<script data-main="js/config" src="js/libs/requirejs-2.1.14.js"></script>	
+</body>
+</html>
